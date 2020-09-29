@@ -15,16 +15,20 @@
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                    <p>{{quote.description}}</p>
+
                     <footer class="blockquote-footer"><cite title="Source Title">{{quote.author}}</cite></footer>
                     <br>
                     <p style="font-family: 'Special Elite', cursive; font-size: 15px;" >It has been {{quote.completeDate|dateCount}} days since this quote has been added.</p>
                      </blockquote>
+
                     <div class="footer">
                     <app-vote-count></app-vote-count>
                   </div>
+
                 <div class="delete">
               <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'> Delete</app-quote-details>
              </div>
+             
            </div>
          </div>
       
