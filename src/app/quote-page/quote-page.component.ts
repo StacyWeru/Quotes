@@ -5,7 +5,8 @@ import { Quote} from '../quote';
   selector: 'app-quote-page',
   templateUrl: './quote-page.component.html',
   styleUrls: ['./quote-page.component.css']
-})
+}) 
+
 export class QuotePageComponent implements OnInit {
 
   quotes : Quote[]=[
