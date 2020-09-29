@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="header">
+    <h1>Memorable Life quotes to live by...</h1>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="card w-50" class="card " *ngFor='let quote of quotes ; let i= index'>
+        <div class="card-header">
+          <p>{{quote.user}} submitted this on {{quote.completeDate|date}} </p>
+            </div>
+              
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                   <p>{{quote.description}}</p>
+                    <footer class="blockquote-footer"><cite title="Source Title">{{quote.author}}</cite></footer>
+                    <br>
+                    <p style="font-family: 'Special Elite', cursive; font-size: 15px;" >It has been {{quote.completeDate|dateCount}} days since this quote has been added.</p>
+                     </blockquote>
+                    <div class="footer">
+                    <app-vote-count></app-vote-count>
+                  </div>
+                <div class="delete">
+              <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'> Delete</app-quote-details>
+             </div>
+           </div>
+         </div>
+      
+  </div>
+  <div class="col-md-6">
+    <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+  </div>
+</div>
+
+
+</div>
