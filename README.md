@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
- Quotes is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. User can create a new quote, Upvote or downvote a quote, Delete a quote and See the number of upvotes and number of downvotes for each quote.
+ This is a web application whereby the user can upload their quotes by their favorite authors and like it or dislike it or delete it according to the quotes relevance or the users opinion.
 </td>
 </tr>
 </table>
