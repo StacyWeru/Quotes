@@ -1,0 +1,7 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@600&family=Signika:wght@300&family=Special+Elite&display=swap');
+
+.body container-fluid{
+    background-color: aqua;
+}
