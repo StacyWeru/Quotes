@@ -1,0 +1,16 @@
+.row{
+    padding-left: 35px;
+    padding: 50px;
+}
+h2{
+    font-family: 'Quicksand', sans-serif; 
+}
+textarea{
+  width: 100%;
+}
+
+.card{
+    background-color: rgb(222, 243, 241);
+    padding: 30px;
+
+}
